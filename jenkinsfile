@@ -30,6 +30,15 @@ pipeline {
                                  fingerprint: true
             }
         }
+stage('Login Feature Info') {
+    steps {
+        echo '========== LOGIN FEATURE =========='
+        echo 'This build is for the Login feature!'
+        echo "Branch  : ${GIT_BRANCH}"
+        echo "Build # : ${BUILD_NUMBER}"
+        echo "Commit  : ${GIT_COMMIT}"
+    }
+}
         }
     }
 
